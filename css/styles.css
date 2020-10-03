@@ -1,0 +1,416 @@
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --accent-color: #2196f3;
+  --titles-color: #212121;
+  --description-color: #757575;
+  --light-text-color: #fff;
+  --dark-background-color: #2f303a;
+  --logo-second-part-color: #000;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --filter-btn-color: #f5f4fa;
+  --border-color: #eeeeee;
+  --top-line-border: #ececec;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+/*  ============ COMPONENTS  ============ */
+
+.logo {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.logo-second-part {
+  color: var(--logo-second-part-color);
+}
+
+.section-title {
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.667;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--titles-color);
+}
+
+.accent:hover,
+.accent:focus {
+  color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 94px;
+}
+/*  ============ END COMPONENTS  ============ */
+
+/*  ============ HEADER  ============ */
+
+.header {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--top-line-border);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-list-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--titles-color);
+}
+
+.navigation .logo {
+  margin-right: 90px;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-list-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--description-color);
+}
+
+.header .address {
+  margin-left: auto;
+}
+
+.address-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.address-list {
+  display: flex;
+}
+/*  ============ END HEADER  ============ */
+
+/*  ============ HERO  ============ */
+
+.hero {
+  background-color: var(--dark-background-color);
+}
+
+.hero-content {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
+  max-width: 696px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.modal-btn {
+  display: block;
+  margin: 0 auto;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--light-text-color);
+  min-width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 3px;
+  padding: 10px 30px;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  color: var(--accent-color);
+  background-color: var(--light-text-color);
+}
+/*  ============ END HERO  ============ */
+
+/* ============ BENEFITS  ============*/
+.benefits-list {
+  display: flex;
+}
+
+.benefits-list-item {
+  width: 270px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.benefits-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.benefits-list-head {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--titles-color);
+  margin-bottom: 10px;
+}
+
+.benefits-list-discription {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--description-color);
+}
+/* ============ END BENEFITS  ============*/
+
+/* ============ WHAT WE DO  ============*/
+.what-we-do {
+  padding-bottom: 94px;
+}
+
+.what-we-do-list {
+  display: flex;
+  justify-content: space-between;
+}
+/* ============ END WHAT WE DO  ============*/
+
+/* ============ TEAM  ============*/
+
+.team {
+  padding-bottom: 94px;
+  background-color: var(--filter-btn-color);
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-list-item {
+  font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-list-content {
+  padding: 30px 40px;
+  text-align: center;
+  border-bottom: var(--border-color);
+  border-right: var(--border-color);
+  border-left: var(--border-color);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--light-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-list-name {
+  font-style: normal;
+  font-weight: 500;
+  color: var(--titles-color);
+  margin-bottom: 10px;
+}
+
+.team-list-discription {
+  font-style: normal;
+  font-weight: 400;
+  color: var(--description-color);
+}
+/* ============ END TEAM  ============*/
+
+/* ============ FOOTER  ============*/
+
+.footer {
+  background-color: var(--dark-background-color);
+}
+
+.footer-content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-content .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer-content .logo .logo-second-part {
+  color: var(--light-text-color);
+}
+
+.footer-address-list {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.footer-address-list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-map-link {
+  color: var(--light-text-color);
+}
+
+.footer-link {
+  color: var(--footer-link-color);
+}
+
+/* ============ END FOOTER  ============*/
+
+/* ====================== PORTFOLIO PAGE  ========================*/
+/* ============ PORTFOLIO SECTION  ============*/
+
+.portfolio {
+  padding-bottom: 94px;
+}
+
+.portfolio-title {
+  display: none;
+}
+/* ============ END PORTFOLIO SECTION  ============*/
+/* ============ FILTERS  ============*/
+.filters {
+  margin-bottom: 50px;
+}
+
+.filters-list {
+  display: flex;
+  justify-content: center;
+}
+
+.filters-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filters-btn {
+  border: none;
+  background-color: var(--filter-btn-color);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--titles-color);
+  padding: 6px 22px;
+}
+
+.filters-btn:hover,
+.filters-btn:focus {
+  color: var(--light-text-color);
+  background-color: var(--accent-color);
+}
+/* ============ END FILTERS  ============*/
+
+/* ============ PROJECTS  ============*/
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.projects-list-item {
+  display: inline-block;
+  margin: 14px;
+}
+
+.projects-list-content {
+  padding: 20px 24px;
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.projects-header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+  margin-bottom: 4px;
+}
+
+.projects-subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--description-color);
+}
+/* ============ END PROJECTS  ============*/
